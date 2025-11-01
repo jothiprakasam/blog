@@ -1,0 +1,46 @@
+site_name: Jothi Prakasam Ramesh
+
+theme:
+  name: material
+  custom_dir: theme_override
+  palette:
+    scheme: slate
+
+  features:
+    - navigation.tabs # For top-level navigation
+    - content.code.copy # Useful for a tech portfolio/blog
+    - navigation.footer
+    - search.suggest
+    - toc.integrate
+
+nav:
+  - Home: index.md
+  - Blogs: blog/index.md
+  - About Me: about.md
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/jothiprakasam
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/jothiprakasam
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:jothiprakasam.r@outlook.com
+  copyright: Copyright &copy; 2020 - 2025 Jothi Prakasam R
+
+extra_css:
+  - /theme_override/main.css
+
+plugins:
+  # Enable the Material for MkDocs Blog plugin
+  - blog:
+      blog_dir: blog # All blog posts will be managed here
+      post_url_format: "{date}/{slug}" # Clean URLs for posts
+  # RSS Feed setup
+  - rss:
+      match_path: blog/posts/.*
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+        - tags
+  - search

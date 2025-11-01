@@ -1,0 +1,6 @@
+:root {
+  /* This hex code is a close match to a deep slate/dark teal. */
+  --md-primary-color: #1e3848;
+  /* You can also set a lighter accent color for links/buttons */
+  --md-accent-color: #00bcd4; /* Cyan */
+}

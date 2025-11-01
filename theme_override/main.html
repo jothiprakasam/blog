@@ -1,0 +1,8 @@
+{% extends "base.html" %} {# Override the block for the navigation/sidebar
+before the TOC #} {% block toc %} {% if page.file.name == "index" %} Recent
+Posts {# Check if the recent_posts variable was injected by the hook #} {% if
+recent_posts %} {% for post in recent_posts %} {% include
+".icons/material/post-outline.svg" %} {{ post.title }} ({{ post.date }}) {%
+endfor %} {% else %} No recent posts found yet. {% endif %} {% endif %} {#
+Render the standard TOC or secondary sidebar contents #} {{ super() }} {%
+endblock %}

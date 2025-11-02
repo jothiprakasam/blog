@@ -25,7 +25,6 @@ extra:
       link: https://www.linkedin.com/in/jothiprakasam
     - icon: fontawesome/solid/paper-plane
       link: mailto:jothiprakasam.r@outlook.com
-  copyright: Copyright &copy; 2020 - 2025 Jothi Prakasam R
 
 extra_css:
   - /theme_override/main.css
